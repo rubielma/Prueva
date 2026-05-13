@@ -1,0 +1,164 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <button class="menu-btn">&#9776;</button>
+            <h1>Supermarket</h1>
+            <button class="cart-btn">&#128722;</button>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Barra de búsqueda">
+            <button class="search-btn">&#128269;</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <h2>Encuentra aquí lo que necesitas</h2>
+            <button class="shop-now">Compra ahora</button>
+        </section>
+        
+        <section class="product-categories">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/100" alt="Zapatos">
+                <p>Zapatos</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/100" alt="Sueter">
+                <p>Sueter</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/100" alt="Faldas">
+                <p>Faldas</p>
+            </div>
+        </section>
+    </main>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #333333; /* Texto principal en gris oscuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #1A1A1A; /* Fondo gris oscuro */
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-btn, .cart-btn {
+    font-size: 24px;
+    color: #FFFFFF; /* Blanco para iconos */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    color: #00CFE8; /* Azul turquesa */
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #00CFE8; /* Azul turquesa */
+    background-color: #F0F0F0; /* Gris claro */
+    color: #333333; /* Gris oscuro */
+}
+
+.search-btn {
+    font-size: 18px;
+    color: #00CFE8; /* Azul turquesa */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient(135deg, #00CFE8, #28A745); /* Degradado azul turquesa a verde esmeralda */
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    color: #FFFFFF; /* Blanco */
+}
+
+.banner h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.shop-now {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #FFFFFF; /* Blanco */
+    background-color: #FF6F3C; /* Naranja suave */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.product-item {
+    text-align: center;
+    flex: 1;
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #333333; /* Texto en gris oscuro */
+}
+</style>
+
+</body>
+</html>
